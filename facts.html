@@ -1,0 +1,17 @@
+---
+title: JOHNVOGT Facts
+layout: page
+---
+
+<div id="fact"></div>
+
+<p><a id="new-fact" href="">New Fact</a></p>
+
+<script>
+  $('#new-fact').click(function(e) {
+    e.preventDefault();
+    $.get('/data.json', {}, function(data) {
+      $('#fact').html(data.body);
+    }, 'json');
+  }).click();
+</script>

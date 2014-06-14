@@ -1,0 +1,17 @@
+---
+layout: ask
+---
+<h3>{{ page.title }}</h3>
+  <p class="byline">Posted on {{ page.date | date_to_string }}</p>
+  <div id="question">
+    <p>Dear JOHNVOGT,</p>
+    <p>{{ content | split:"<!--ANSWER-->" | first }}</p>
+    <p><em>&mdash;{{ page.asker }}</em></p>
+  </div>
+
+  <div id="answer">
+    <p>Listen up, loser:</p>
+    <p>{{ content | split:"<!--ANSWER-->" | last }}</p>
+    <p><em>&mdash;JOHNVOGT</em></p>
+  </div>
+</section>

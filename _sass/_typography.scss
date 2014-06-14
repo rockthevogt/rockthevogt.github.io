@@ -1,0 +1,62 @@
+$maroon: #780a0a;
+$blue: #485d78;
+$serif: "Palatino Linotype", "Palatino", "Book Antiqua", "Times New Roman", serif;
+$sans-serif: "Helvetica Neue", Arial, Helvetica, sans-serif;
+
+@font-face {
+  font-family: 'SFCollegiateRegular';
+  src: url('/fonts/SF_Collegiate-webfont.eot');
+  src: url('/fonts/SF_Collegiate-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/SF_Collegiate-webfont.woff') format('woff'),
+       url('/fonts/SF_Collegiate-webfont.ttf') format('truetype'),
+       url('/fonts/SF_Collegiate-webfont.svg#SFCollegiateRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFCollegiateSolidRegular';
+  src: url('/fonts/SF_Collegiate_Solid-webfont.eot');
+  src: url('/fonts/SF_Collegiate_Solid-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/SF_Collegiate_Solid-webfont.woff') format('woff'),
+       url('/fonts/SF_Collegiate_Solid-webfont.ttf') format('truetype'),
+       url('/fonts/SF_Collegiate_Solid-webfont.svg#SFCollegiateSolidRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+strong {
+  font-weight: bold;
+}
+
+body {
+  color: #333;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: $serif;
+  h2 {
+    color: $maroon;
+    font-size: 45px;
+    line-height: 50px;
+    font-family: SFCollegiateRegular, sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  h3 {
+    color: $blue;
+    font-family: SFCollegiateSolidRegular, sans-serif;
+    line-height: 25px;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+.container_12 > aside {
+  font-size: 13px;
+  line-height: 20px;
+}

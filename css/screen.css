@@ -1,0 +1,583 @@
+/* Reset styles stolen from Blueprint framework */
+/* line 3, ../_sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 4, ../_sass/_reset.scss */
+body {
+  line-height: 1;
+  color: #222;
+  background: white;
+}
+
+/* line 5, ../_sass/_reset.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 6, ../_sass/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* line 7, ../_sass/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 8, ../_sass/_reset.scss */
+blockquote, q {
+  quotes: "" "";
+}
+
+/* line 11, ../_sass/_reset.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'SFCollegiateRegular';
+  src: url("/fonts/SF_Collegiate-webfont.eot");
+  src: url("/fonts/SF_Collegiate-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/SF_Collegiate-webfont.woff") format("woff"), url("/fonts/SF_Collegiate-webfont.ttf") format("truetype"), url("/fonts/SF_Collegiate-webfont.svg#SFCollegiateRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFCollegiateSolidRegular';
+  src: url("/fonts/SF_Collegiate_Solid-webfont.eot");
+  src: url("/fonts/SF_Collegiate_Solid-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/SF_Collegiate_Solid-webfont.woff") format("woff"), url("/fonts/SF_Collegiate_Solid-webfont.ttf") format("truetype"), url("/fonts/SF_Collegiate_Solid-webfont.svg#SFCollegiateSolidRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 28, ../_sass/_typography.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 32, ../_sass/_typography.scss */
+body {
+  color: #333;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "Palatino Linotype", "Palatino", "Book Antiqua", "Times New Roman", serif;
+}
+/* line 37, ../_sass/_typography.scss */
+body h2 {
+  color: #780a0a;
+  font-size: 45px;
+  line-height: 50px;
+  font-family: SFCollegiateRegular, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+/* line 46, ../_sass/_typography.scss */
+body h3 {
+  color: #485d78;
+  font-family: SFCollegiateSolidRegular, sans-serif;
+  line-height: 25px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+/* line 54, ../_sass/_typography.scss */
+body p {
+  margin-bottom: 25px;
+}
+
+/* line 59, ../_sass/_typography.scss */
+.container_12 > aside {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* line 2, ../_sass/_layout.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 6, ../_sass/_layout.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 10, ../_sass/_layout.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 14, ../_sass/_layout.scss */
+body {
+  font-size: 16px;
+  line-height: 25px;
+  color: #333;
+  background: #333333 url("/img/steel-bg.jpg") top left repeat;
+}
+/* line 20, ../_sass/_layout.scss */
+body header {
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  background: url("/img/vogt-header.jpg") top left no-repeat, url("/img/dark-grunge-bg.jpg"), #333333;
+}
+/* line 29, ../_sass/_layout.scss */
+body #content {
+  max-width: 960px;
+  width: 90%;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  margin: 0 auto;
+  -moz-box-sizing: border-box;
+  padding: 0 10px;
+}
+/* line 40, ../_sass/_layout.scss */
+body .section-subtitle {
+  font-style: italic;
+  font-family: "Palatino Linotype", "Palatino", "Book Antiqua", "Times New Roman", serif !important;
+  font-size: 1.2em;
+  text-shadow: rgba(255, 255, 255, 0.7) 1px 1px 0;
+}
+/* line 47, ../_sass/_layout.scss */
+body footer {
+  max-width: 960px;
+  width: 90%;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  margin: 0 auto;
+  -moz-box-sizing: border-box;
+  padding: 1em 10px;
+  background-color: #333;
+  color: #aaa;
+  font-size: 0.8em;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+/* line 62, ../_sass/_layout.scss */
+body footer #footer-sections div {
+  width: 33%;
+  float: left;
+  padding-right: 2em;
+}
+/* line 66, ../_sass/_layout.scss */
+body footer #footer-sections div:last-child {
+  padding-right: 0;
+}
+/* line 72, ../_sass/_layout.scss */
+body footer #footer-copyright {
+  clear: both;
+  margin-top: 2em;
+  font-size: 0.75em;
+  text-align: right;
+  line-height: 3em;
+}
+/* line 80, ../_sass/_layout.scss */
+body footer h2 {
+  font-family: SFCollegiateSolidRegular, sans-serif;
+  line-height: 25px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+/* line 93, ../_sass/_layout.scss */
+body > header h1 a {
+  display: block;
+  height: 125px;
+  text-indent: -1000em;
+}
+/* line 100, ../_sass/_layout.scss */
+body > header nav ul {
+  list-style-type: none;
+  padding: 0 10px;
+}
+/* line 104, ../_sass/_layout.scss */
+body > header nav ul li {
+  display: inline-block;
+  margin-right: 3em;
+  padding-top: 5px;
+}
+/* line 108, ../_sass/_layout.scss */
+body > header nav ul li a {
+  font-family: SFCollegiateSolidRegular, sans-serif;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #ddd;
+  text-decoration: none;
+}
+/* line 116, ../_sass/_layout.scss */
+body > header nav ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* line 126, ../_sass/_layout.scss */
+body > div#content {
+  padding-top: 25px;
+  background: white url("/img/grunge-bg.jpg");
+  border-top: none;
+}
+/* line 131, ../_sass/_layout.scss */
+body > div#content #tagline {
+  font-family: "Palatino Linotype", "Palatino", "Book Antiqua", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 25px;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.7) 1px 1px 0;
+  padding: 1em 0;
+  clear: both;
+}
+
+/* line 142, ../_sass/_layout.scss */
+#fuck-you-overlay {
+  display: none;
+}
+/* line 145, ../_sass/_layout.scss */
+#fuck-you-overlay #fuck-you {
+  position: relative;
+  top: 1000em;
+  transition: all 3s ease;
+  -moz-transition: all 3s ease;
+}
+
+/* line 3, ../_sass/_home.scss */
+body > div#content #hero {
+  background-image: url(/img/yankee-stadium.jpg);
+  background-size: cover;
+  margin-bottom: 1.5em;
+}
+/* line 8, ../_sass/_home.scss */
+body > div#content #hero h2 {
+  width: 100%;
+  padding: 0.25em 0.5ex 0.25em 33%;
+  margin: 0;
+  line-height: 1em;
+  font-family: SFCollegiateSolidRegular;
+  font-size: 5.0em;
+  color: #800;
+  box-sizing: border-box;
+  text-align: right;
+  color: #485d78;
+  text-shadow: rgba(255, 255, 255, 0.7) 1px 1px 0;
+  min-height: 252px;
+}
+/* line 23, ../_sass/_home.scss */
+body > div#content #hero p {
+  width: 100%;
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  font-size: 1.5em;
+  line-height: 2em;
+  font-family: "Palatino Linotype", "Palatino", "Book Antiqua", "Times New Roman", serif;
+  font-style: italic;
+}
+/* line 35, ../_sass/_home.scss */
+body > div#content #features {
+  position: relative;
+}
+/* line 37, ../_sass/_home.scss */
+body > div#content #features div {
+  width: 33%;
+  padding: 0 1em;
+  border-left: 1px solid #888;
+  float: left;
+  font-family: "Palatino Linotype", "Palatino", "Book Antiqua", "Times New Roman", serif;
+}
+/* line 44, ../_sass/_home.scss */
+body > div#content #features div:first-child {
+  padding: 0;
+  padding-right: 1em;
+  border: 0;
+}
+/* line 50, ../_sass/_home.scss */
+body > div#content #features div a {
+  color: #ddd;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #780a0a;
+  text-shadow: rgba(255, 255, 255, 0.7) 1px 1px 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+/* line 61, ../_sass/_home.scss */
+body > div#content #features div a.hover {
+  text-decoration: underline;
+}
+
+/* line 1, ../_sass/_bingo.scss */
+div#card * {
+  box-sizing: border-box;
+}
+
+/* line 5, ../_sass/_bingo.scss */
+div#card {
+  background-color: #780a0a;
+  border-radius: 2em;
+  padding: 2em;
+}
+/* line 10, ../_sass/_bingo.scss */
+div#card table#heading {
+  width: 100%;
+  margin-bottom: 1em;
+}
+/* line 13, ../_sass/_bingo.scss */
+div#card table#heading th {
+  width: 20%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 6em;
+  font-family: Impact, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 1em;
+  box-sizing: border-box;
+  color: #ddd;
+}
+/* line 26, ../_sass/_bingo.scss */
+div#card table#grid {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  clear: both;
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  color: #333;
+  background-color: #ddd;
+  border-radius: 1em;
+  padding: 1em;
+}
+/* line 39, ../_sass/_bingo.scss */
+div#card table#grid tr td {
+  border: 2px solid #333;
+  text-align: center;
+  padding: 1em;
+  width: 20%;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+/* line 47, ../_sass/_bingo.scss */
+div#card table#grid tr td span.free-square {
+  font-family: "Palatino Linotype", "Palatino", "Book Antiqua", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 2em;
+}
+/* line 53, ../_sass/_bingo.scss */
+div#card table#grid tr td:first-child {
+  border-left: 0;
+}
+/* line 57, ../_sass/_bingo.scss */
+div#card table#grid tr td:last-child {
+  border-right: 0;
+}
+/* line 62, ../_sass/_bingo.scss */
+div#card table#grid tr:first-child td {
+  border-top: 0;
+}
+/* line 66, ../_sass/_bingo.scss */
+div#card table#grid tr:last-child td {
+  border-bottom: 0;
+}
+
+/* line 2, ../_sass/_questions.scss */
+section#question-area {
+  width: 65%;
+  float: left;
+}
+/* line 6, ../_sass/_questions.scss */
+section#question-area .read-more {
+  margin-bottom: 0;
+}
+/* line 8, ../_sass/_questions.scss */
+section#question-area .read-more a {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #780a0a;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+/* line 15, ../_sass/_questions.scss */
+section#question-area .read-more a:hover {
+  text-decoration: underline;
+}
+
+/* line 22, ../_sass/_questions.scss */
+#lead-question, #question, #answer, #about-john-vogt, #more-questions {
+  background-color: #fff;
+  padding: 1em;
+  border: 1px solid #aaa;
+  margin-bottom: 1.5em;
+}
+/* line 28, ../_sass/_questions.scss */
+#lead-question p:last-child, #question p:last-child, #answer p:last-child, #about-john-vogt p:last-child, #more-questions p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 34, ../_sass/_questions.scss */
+#more-questions article {
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+/* line 38, ../_sass/_questions.scss */
+#more-questions article:last-child {
+  margin-right: 0;
+}
+/* line 42, ../_sass/_questions.scss */
+#more-questions article h4 {
+  font-weight: bold;
+  text-align: center;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* line 50, ../_sass/_questions.scss */
+p.byline {
+  font-size: 0.8em;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+/* line 56, ../_sass/_questions.scss */
+#question {
+  font-style: italic;
+}
+
+/* line 60, ../_sass/_questions.scss */
+aside#about-john-vogt {
+  width: 30%;
+  float: left;
+  margin-left: 5%;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+/* line 68, ../_sass/_questions.scss */
+aside#about-john-vogt img {
+  width: 100%;
+  display: block;
+  margin-bottom: 1em;
+}
+/* line 74, ../_sass/_questions.scss */
+aside#about-john-vogt h3 {
+  text-align: left;
+}
+
+@media only screen and (max-width: 960px) {
+  /* line 2, ../_sass/_responsive.scss */
+  body > header {
+    background: url("/img/vogt-header-tablet.jpg") top center no-repeat, url("/img/dark-grunge-bg.jpg"), #333333;
+  }
+  /* line 5, ../_sass/_responsive.scss */
+  body > header nav ul li {
+    margin-right: 1.5em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 14, ../_sass/_responsive.scss */
+  img {
+    max-width: 100%;
+  }
+
+  /* line 18, ../_sass/_responsive.scss */
+  body {
+    min-width: 320px;
+  }
+  /* line 21, ../_sass/_responsive.scss */
+  body header {
+    background: url("/img/dark-grunge-bg.jpg") top left repeat;
+    width: 90%;
+  }
+  /* line 26, ../_sass/_responsive.scss */
+  body header h1 {
+    width: 100%;
+    background: transparent;
+    height: auto;
+  }
+  /* line 30, ../_sass/_responsive.scss */
+  body header h1 a {
+    height: auto;
+    text-indent: 0;
+    font-size: 50px;
+    line-height: 50px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-family: SFCollegiateSolidRegular;
+    text-align: center;
+    text-decoration: none;
+    color: #780a0a;
+  }
+  /* line 44, ../_sass/_responsive.scss */
+  body header nav ul li {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+  /* line 51, ../_sass/_responsive.scss */
+  body #content {
+    -moz-box-sizing: box-model;
+    width: 90%;
+    padding: 10px;
+  }
+
+  /* line 62, ../_sass/_responsive.scss */
+  #fuck-you-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  /* line 71, ../_sass/_responsive.scss */
+  #fuck-you-overlay #fuck-you {
+    position: relative;
+    top: 0;
+    margin-top: 50px;
+    opacity: 1;
+    width: 100%;
+    color: #f00;
+    clear: both;
+    display: inline-block;
+    min-width: 300px;
+    transition: all 3s ease;
+    -moz-transition: all 3s ease;
+  }
+  /* line 84, ../_sass/_responsive.scss */
+  #fuck-you-overlay #fuck-you img {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  /* line 91, ../_sass/_responsive.scss */
+  #fuck-you-overlay #fuck-you h2 {
+    font-family: SFCollegiateSolidRegular, sans-serif;
+    color: #ddd;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  /* */
+}

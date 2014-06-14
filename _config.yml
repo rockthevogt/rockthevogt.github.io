@@ -1,0 +1,28 @@
+title: "Rock The Vogt"
+description: "The New York Yankees of JOHNVOGT fansites."
+baseurl: ""
+url: "http://rockthevogt.com/"
+
+exclude: ["vendor", ".git", ".gitignore", "Gemfile", "Gemfile.lock", "config.rb"]
+
+permalink: "/ask/:year/:title"
+
+
+# Build settings
+markdown: redcarpet
+paginate: 5
+
+# Frontmatter Defaults
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      layout: "default"
+    scope:
+      path: "css"
+      layout: nil
+
+safe: true
+timezone: America/Chicago
+encoding: utf-8

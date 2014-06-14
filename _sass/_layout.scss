@@ -1,0 +1,151 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 25px;
+  color: #333;
+  background: #333 url('/img/steel-bg.jpg') top left repeat;
+
+  header {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    background: url('/img/vogt-header.jpg') top left no-repeat, url('/img/dark-grunge-bg.jpg'), #333;
+  }
+
+  #content {
+    max-width: 960px;
+    width: 90%;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    margin: 0 auto;
+    -moz-box-sizing: border-box;
+    padding: 0 10px;
+  }
+
+  .section-subtitle {
+    font-style: italic;
+    font-family: $serif !important;
+    font-size: 1.2em;
+    text-shadow: rgba(255,255,255,0.7) 1px 1px 0;
+  }
+
+  footer {
+    max-width: 960px;
+    width: 90%;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    margin: 0 auto;
+    -moz-box-sizing: border-box;
+    padding: 1em 10px;
+    background-color: #333;
+    color: #aaa;
+    font-size: 0.8em;
+    font-family: $sans-serif;
+
+    #footer-sections {
+      div {
+        width: 33%;
+        float: left;
+        padding-right: 2em;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    #footer-copyright {
+      clear: both;
+      margin-top: 2em;
+      font-size: 0.75em;
+      text-align: right;
+      line-height: 3em;
+    }
+
+    h2 {
+      font-family: SFCollegiateSolidRegular, sans-serif;
+      line-height: 25px;
+      font-size: 25px;
+      text-transform: uppercase;
+      color: #ddd;
+    }
+  }
+
+}
+
+body > header {
+
+  h1 a {
+    display: block;
+    height: 125px;
+    text-indent: -1000em;
+  }
+
+  nav {
+    ul {
+      list-style-type: none;
+      padding: 0 10px;
+
+      li {
+        display: inline-block;
+        margin-right: 3em;
+        padding-top:5px;
+        a {
+          font-family: SFCollegiateSolidRegular, sans-serif;
+          font-size: 25px;
+          line-height: 40px;
+          font-weight: normal;
+          text-transform: uppercase;
+          color: #ddd;
+          text-decoration: none;
+          &:hover {
+            color: #fff;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+body > div#content {
+  padding-top:25px;
+  background: #fff url('/img/grunge-bg.jpg');
+  border-top: none;
+
+  #tagline {
+    font-family: "Palatino Linotype", "Palatino", "Book Antiqua", "Times New Roman", serif;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: rgba(255,255,255,0.7) 1px 1px 0;
+    padding: 1em 0;
+    clear: both;
+  }
+}
+
+#fuck-you-overlay {
+  display: none;
+
+  #fuck-you {
+    position: relative;
+    top: 1000em;
+    transition:all 3s ease;
+    -moz-transition:all 3s ease;
+  }
+}

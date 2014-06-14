@@ -1,0 +1,30 @@
+---
+title: Ask JOHNVOGT
+subtitle: JOHNVOGT smashes your personal problems.
+layout: ask
+---
+
+{% for question in site.posts %}
+  {% if forloop.first %}
+    <article id="lead-question">
+      {% assign question = {{ site.posts.shift }} %}
+      <h3>{{ question.title }}</h3>
+      <p class="byline">Posted on {{ question.date | date_to_long_string }}</p>
+      <p>Dear JOHNVOGT,</p>
+      <p>{{ question.content | split:"<!--ANSWER-->" | first }}</p>
+      <p class="read-more"><a href="{{ question.url }}">Read more</a></p>
+    </article>
+    <!-- Set things up for the next two loops -->
+    <section id="more-questions" class="clearfix">
+      <h3>More Questions from Weaklings</h3>
+  {% else %}
+    <article>
+      <h4>{{ question.title }}</h4>
+      <p>
+        {{ question.content | split:"<!--ANSWER-->" | first }}
+      </p>
+    </article>
+  {% endif %}
+
+{% endfor %}
+</section> <!-- Yes, we have to do it this way -->

@@ -1,0 +1,33 @@
+---
+title: JOHNVOGT Bingo
+subtitle: You can be a winner, just like JOHNVOGT!
+layout: page
+---
+<p class="dont-print">Play JOHNVOGT bingo and never miss another word of JOHNVOGT's insight and wit.</p>
+
+<div id="card">
+  <table id="heading">
+    <tr>
+      <th>B</th>
+      <th>I</th>
+      <th>N</th>
+      <th>G</th>
+      <th>O</th>
+    </tr>
+  </table>
+  <table id="grid">
+      <% 5.times do |row| %>
+        <tr>
+          <% 5.times do |column| %>
+            <td>
+              <% if row == 2 && column == 2 %>
+                <span class="free-square">Literally</span>
+              <% else %>
+                <%= @catchphrases.shift %>
+              <% end %>
+            </td>
+          <% end %>
+        </tr>
+      <% end %>
+  </table>
+</div>
