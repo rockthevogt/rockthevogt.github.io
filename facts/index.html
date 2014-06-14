@@ -1,0 +1,27 @@
+---
+title: JOHNVOGT Facts
+subtitle: All of these facts are true because JOHNVOGT says so.
+layout: page
+---
+
+<div id="fact">
+<h3>Holy Crap! Did you know?</h3>
+<p></p>
+</div>
+
+<p><a class="btn btn-default" id="new-fact" href="">New Fact</a></p>
+
+<script>
+  var facts = [];
+  $.get('/data/facts.json', {}, function(data) {
+    facts = data;
+    //alert(data);
+  }, 'json').then(function() {
+    $('#new-fact').click(function(e) {
+      e.preventDefault();
+      $('#fact>p').html(facts[Math.floor(Math.random()*facts.length)]);
+    });
+
+    $('#new-fact').click();
+  });
+</script>

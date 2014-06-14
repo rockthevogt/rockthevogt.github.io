@@ -1,0 +1,97 @@
+/* line 1, ../_sass/print.scss */
+body {
+  font-size: 12pt;
+  font-family: "Times New Roman", serif;
+  color: black;
+}
+
+/* line 7, ../_sass/print.scss */
+header, footer {
+  display: none;
+}
+
+/* line 11, ../_sass/print.scss */
+#tagline {
+  display: none;
+}
+
+/* line 15, ../_sass/print.scss */
+.section-subtitle {
+  display: none;
+}
+
+/* line 19, ../_sass/print.scss */
+#fuck-you-overlay {
+  display: none;
+}
+
+/* line 23, ../_sass/print.scss */
+.dont-print {
+  display: none !important;
+}
+
+/**
+ * BINGO CARD
+ */
+/* line 31, ../_sass/print.scss */
+div#card * {
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+/* line 37, ../_sass/print.scss */
+div#card table#heading {
+  width: 100%;
+  margin-bottom: 1em;
+  border: 0;
+}
+/* line 41, ../_sass/print.scss */
+div#card table#heading th {
+  width: 20%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 6em;
+  line-height: 1em;
+  border: none;
+  box-sizing: border-box;
+}
+/* line 52, ../_sass/print.scss */
+div#card table#grid {
+  clear: both;
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border-radius: 1em;
+  padding: 1em;
+}
+/* line 60, ../_sass/print.scss */
+div#card table#grid tr td {
+  border: 1pt solid black;
+  text-align: center;
+  padding: 1em;
+  width: 20%;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+/* line 68, ../_sass/print.scss */
+div#card table#grid tr td span.free-square {
+  font-style: italic;
+  font-size: 2em;
+  border: none;
+}
+/* line 74, ../_sass/print.scss */
+div#card table#grid tr td:first-child {
+  border-left: 0;
+}
+/* line 78, ../_sass/print.scss */
+div#card table#grid tr td:last-child {
+  border-right: 0;
+}
+/* line 83, ../_sass/print.scss */
+div#card table#grid tr:first-child td {
+  border-top: 0;
+}
+/* line 87, ../_sass/print.scss */
+div#card table#grid tr:last-child td {
+  border-bottom: 0;
+}

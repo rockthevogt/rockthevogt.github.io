@@ -398,6 +398,55 @@ div#card table#grid tr:last-child td {
   border-bottom: 0;
 }
 
+/* line 1, ../_sass/_facts.scss */
+.btn {
+  display: inline-block;
+  margin-bottom: 0px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 4px;
+  -moz-user-select: none;
+  border: 1px solid transparent;
+}
+
+/* line 18, ../_sass/_facts.scss */
+.btn-default {
+  color: #333;
+  background-color: #FFF;
+  border-color: #CCC;
+}
+
+/* line 24, ../_sass/_facts.scss */
+a.btn {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+/* line 29, ../_sass/_facts.scss */
+#fact {
+  background-color: #fff;
+  padding: 1em;
+  border: 1px solid #aaa;
+  margin-bottom: 1.5em;
+}
+/* line 35, ../_sass/_facts.scss */
+#fact p {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin-top: 0.8em;
+}
+/* line 40, ../_sass/_facts.scss */
+#fact p:last-child {
+  margin-bottom: 0;
+}
+
 /* line 2, ../_sass/_questions.scss */
 section#question-area {
   width: 65%;

@@ -1,0 +1,44 @@
+.btn {
+  display: inline-block;
+  margin-bottom: 0px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 4px;
+  -moz-user-select: none;
+  border: 1px solid transparent;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #FFF;
+  border-color: #CCC;
+}
+
+a.btn {
+  font-family: $sans-serif;
+  text-decoration: none;
+}
+
+#fact {
+  background-color: #fff;
+  padding: 1em;
+  border: 1px solid #aaa;
+  margin-bottom: 1.5em;
+
+  p {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-top: 0.8em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
