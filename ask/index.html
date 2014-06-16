@@ -23,8 +23,8 @@ layout: ask
       <p>
         {{ question.content | split:"<!--ANSWER-->" | first }}
       </p>
+      <p class="read-more"><a href="{{ question.url }}">Read more</a></p>
     </article>
   {% endif %}
-
 {% endfor %}
 </section> <!-- Yes, we have to do it this way -->
