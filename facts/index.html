@@ -6,22 +6,23 @@ layout: page
 
 <div id="fact">
 <h3>Holy Crap! Did you know?</h3>
-<p></p>
+<p>Unlike your browser, JOHNVOGT's browser supports JavaScript.</p>
 </div>
 
 <p><a class="btn btn-default" id="new-fact" href="">New Fact</a></p>
 
 <script>
-  var facts = [];
-  $.get('/data/facts.json', {}, function(data) {
-    facts = data;
-    //alert(data);
-  }, 'json').then(function() {
-    $('#new-fact').click(function(e) {
-      e.preventDefault();
-      $('#fact>p').html(facts[Math.floor(Math.random()*facts.length)]);
-    });
+  (function($) {
+    var nextFact;
+    $.get('/data/facts.json', {}, function(data) {
+      nextFact = InfiniteRandomIterator(data);
+    }, 'json').then(function() {
+      $('#new-fact').click(function(e) {
+        e.preventDefault();
+        $('#fact>p').html(nextFact());
+      });
 
-    $('#new-fact').click();
-  });
+      $('#new-fact').click();
+    });
+  })(jQuery);
 </script>

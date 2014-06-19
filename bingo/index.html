@@ -20,24 +20,26 @@ layout: page
   </table>
 </div>
 <script>
-  var phrases = [];
-  $.get('/data/bingo.json', {}, function(data) {
-    phrases = shuffle(data);
-  }, 'json').then(function() {
-    var html = '';
-    for (var row=0; row<5; row++) {
-      html += '<tr>';
-      for (var column=0; column < 5; column++) {
-        html += '<td>';
-        if (row == 2 && column == 2) {
-          html += '<span class="free-square">Literally</span>';
-        } else {
-          html += phrases.shift();
+  (function($) {
+    var nextSquare;
+    $.get('/data/bingo.json', {}, function(data) {
+      nextSquare = InfiniteRandomIterator(data);
+    }, 'json').then(function() {
+      var html = '';
+      for (var row=0; row<5; row++) {
+        html += '<tr>';
+        for (var column=0; column < 5; column++) {
+          html += '<td>';
+          if (row == 2 && column == 2) {
+            html += '<span class="free-square">Literally</span>';
+          } else {
+            html += nextSquare();
+          }
+          html += '</td>';
         }
-        html += '</td>';
+        html += '</tr>';
       }
-      html += '</tr>';
-    }
-    $('table#grid').html(html);
-  });
+      $('table#grid').html(html);
+    });
+  })(jQuery);
 </script>
