@@ -9,7 +9,6 @@ permalink: "/ask/:year/:title"
 
 
 # Build settings
-markdown: redcarpet
 paginate: 5
 
 # Frontmatter Defaults
